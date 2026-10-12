@@ -4,226 +4,248 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TTTM2113 Web Development Deliverables</title>
-  <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    
+    /* Custom Premium Gold Gradients */
+    .bg-apple-gold {
+      background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+    }
+    .text-apple-gold {
+      background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
- 
-<body class="bg-body-tertiary">
- 
-  <div class="bg-primary bg-gradient text-white text-center py-5">
-    <div class="container py-4">
-      <img src="https://image.magnific.com/free-icon/child-head-with-smiling-face_318-28094.jpg" alt="Student photo" width="160" height="160"
-           class="rounded-circle border border-5 border-white shadow mb-4">
-      <p class="text-uppercase fw-semibold mb-2 opacity-75">
+
+<body class="bg-zinc-50 text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
+
+  <!-- Header Section -->
+  <header class="bg-zinc-900 text-white text-center py-24 px-6 relative overflow-hidden">
+    <div class="max-w-3xl mx-auto flex flex-col items-center relative z-10">
+      <!-- You can change this URL to "face1.jpg" if you want to use the local image in your folder -->
+      <img src="https://i.postimg.cc/vTfdm2WR/DSC-1022-40kb.jpg" alt="Student photo" 
+           class="w-40 h-40 rounded-full border-4 border-zinc-800 shadow-2xl mb-8 object-cover">
+      
+      <p class="text-apple-gold font-semibold tracking-widest uppercase text-xs mb-4">
         TTTM2113 – Web Development
       </p>
-      <h1 class="display-5 fw-bold mb-3">Web Programming Deliverables</h1>
-      <p class="lead mb-0">A228896 – ALI UMAR BIN HISHAM TALIB</p>
-    </div>
-  </div>
- 
-  <div class="container py-5">
-    <div class="text-center mb-5">
-      <h2 class="display-6 fw-bold">Weekly Labs</h2>
-      <p class="lead text-body-secondary mb-0">
-        Practical exercises and activities throughout the course
+      
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tighter mb-4 leading-tight">
+        Web Programming <br>Deliverables
+      </h1>
+      
+      <p class="text-lg md:text-xl text-zinc-400 font-light">
+        A228896 – ALI UMAR BIN HISHAM TALIB
       </p>
     </div>
- 
-    <div class="row g-4">
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-1</span>
-            <h3 class="h4 fw-bold">Basic HTML</h3>
-            <p class="text-body-secondary">Introduction to HTML elements and document structure.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-2</span>
-            <h3 class="h4 fw-bold">HTML Forms</h3>
-            <p class="text-body-secondary">Creating forms and collecting user input with HTML.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-3</span>
-            <h3 class="h4 fw-bold">Cascading Style Sheet</h3>
-            <p class="text-body-secondary">Designing and styling web pages using CSS.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-4</span>
-            <h3 class="h4 fw-bold">Bootstrap</h3>
-            <p class="text-body-secondary">Creating responsive interfaces using Bootstrap 5.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-5</span>
-            <h3 class="h4 fw-bold">Basic PHP</h3>
-            <p class="text-body-secondary">Introduction to server-side programming using PHP.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-6</span>
-            <h3 class="h4 fw-bold">PHP + MySQL</h3>
-            <p class="text-body-secondary">Connecting PHP applications to a MySQL database.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-7</span>
-            <h3 class="h4 fw-bold">MVC Framework</h3>
-            <p class="text-body-secondary">Building web applications using the Model-View-Controller pattern.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-8</span>
-            <h3 class="h4 fw-bold">Advanced PHP</h3>
-            <p class="text-body-secondary">Developing more advanced server-side PHP applications.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-9</span>
-            <h3 class="h4 fw-bold">JavaScript</h3>
-            <p class="text-body-secondary">Adding interaction and dynamic behaviour to web pages.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-10</span>
-            <h3 class="h4 fw-bold">jQuery</h3>
-            <p class="text-body-secondary">Simplifying JavaScript programming using jQuery.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4 d-flex flex-column">
-            <span class="badge text-bg-success mb-3 align-self-start">Lab-11</span>
-            <h3 class="h4 fw-bold">AJAX + RESTful API + JSON</h3>
-            <p class="text-body-secondary">Working with web APIs and exchanging data using JSON.</p>
-            <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open Task-1 →</a>
-          </div>
-        </div>
-      </div>
- 
-    </div>
-  </div>
- 
-  <div class="bg-warning-subtle py-5">
-    <div class="container py-4">
- 
-      <div class="text-center mb-5">
-        <h2 class="display-6 fw-bold">Individual Project</h2>
-        <p class="lead text-body-secondary mx-auto mb-0">
-          My project is to develop a web-based back-office system
-          for a company that sells <strong>{???}</strong>.
-          {Describe your project here}
+  </header>
+
+  <!-- Weekly Labs Section -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tighter mb-4">Weekly Labs</h2>
+        <p class="text-lg md:text-xl text-zinc-500 font-light max-w-2xl mx-auto">
+          Practical exercises and activities throughout the course
         </p>
       </div>
- 
-      <div class="row g-4">
- 
-        <div class="col-md-6 col-xl-3">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body p-4 d-flex flex-column">
-              <span class="badge text-bg-primary mb-3 align-self-start">Project Task 1</span>
-              <h3 class="h4 fw-bold">HTML+CSS</h3>
-              <p class="text-body-secondary">Develop the initial interface and page structure for the project.</p>
-              <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open →</a>
-            </div>
-          </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Lab 1 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-1</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">Basic HTML</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Introduction to HTML elements and document structure.</p>
+          <a href="/users/a228896/lab-1/index.html" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Lab-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </div>
- 
-        <div class="col-md-6 col-xl-3">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body p-4 d-flex flex-column">
-              <span class="badge text-bg-primary mb-3 align-self-start">Project Task 2</span>
-              <h3 class="h4 fw-bold">PHP + Database + MVC</h3>
-              <p class="text-body-secondary">Implement server-side functionality and database operations.</p>
-              <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open →</a>
-            </div>
-          </div>
+
+        <!-- Lab 2 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-2</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">HTML Forms</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Creating forms and collecting user input with HTML.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </div>
- 
-        <div class="col-md-6 col-xl-3">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body p-4 d-flex flex-column">
-              <span class="badge text-bg-primary mb-3 align-self-start">Project Task 3</span>
-              <h3 class="h4 fw-bold">JavaScript + AJAX</h3>
-              <p class="text-body-secondary">Improve usability and responsiveness with JavaScript and AJAX.</p>
-              <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open →</a>
-            </div>
-          </div>
+
+        <!-- Lab 3 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-3</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">Cascading Style Sheet</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Designing and styling web pages using CSS.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </div>
- 
-        <div class="col-md-6 col-xl-3">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body p-4 d-flex flex-column">
-              <span class="badge text-bg-primary mb-3 align-self-start">Final</span>
-              <h3 class="h4 fw-bold">Final Enhancement</h3>
-              <p class="text-body-secondary">Complete the system and add meaningful enhancements to the project.</p>
-              <a href="#" class="btn btn-outline-primary stretched-link mt-auto align-self-start">Open →</a>
-            </div>
-          </div>
+
+        <!-- Lab 4 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-4</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">Bootstrap</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Creating responsive interfaces using Bootstrap 5.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
         </div>
- 
+
+        <!-- Lab 5 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-5</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">Basic PHP</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Introduction to server-side programming using PHP.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Lab 6 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-6</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">PHP + MySQL</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Connecting PHP applications to a MySQL database.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Lab 7 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-7</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">MVC Framework</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Building web applications using the Model-View-Controller pattern.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Lab 8 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-8</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">Advanced PHP</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Developing more advanced server-side PHP applications.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Lab-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Lab 9 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-9</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">JavaScript</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Adding interaction and dynamic behaviour to web pages.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Lab 10 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-10</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">jQuery</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Simplifying JavaScript programming using jQuery.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Lab 11 -->
+        <div class="relative flex flex-col bg-zinc-50 rounded-3xl p-8 border border-zinc-100 hover:shadow-xl hover:border-zinc-200 transition-all duration-300 group">
+          <span class="bg-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Lab-11</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">AJAX + RESTful API + JSON</h3>
+          <p class="text-zinc-500 font-light mb-8 flex-grow">Working with web APIs and exchanging data using JSON.</p>
+          <a href="#" class="text-zinc-900 font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open Task-1 
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
       </div>
     </div>
-  </div>
- 
-  <div class="bg-dark text-white text-center py-4">
-    <div class="container">
-      <p class="fw-semibold mb-1">TTTM2113 Web Development</p>
-      <p class="text-secondary mb-0">Copyright © 2026 Your Website</p>
+  </section>
+
+  <!-- Individual Project Section -->
+  <section class="py-24 px-6 bg-zinc-900 text-white">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tighter mb-4">Individual Project</h2>
+        <p class="text-lg md:text-xl text-zinc-400 font-light max-w-3xl mx-auto">
+          My project is to develop a web-based back-office system for a company that sells <strong class="text-white">{???}</strong>. {Describe your project here}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        
+        <!-- Project Task 1 -->
+        <div class="relative flex flex-col bg-zinc-800 rounded-3xl p-8 border border-zinc-700 hover:border-zinc-500 transition-colors group">
+          <span class="bg-apple-gold text-white text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Project Task 1</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">HTML+CSS</h3>
+          <p class="text-zinc-400 font-light mb-8 flex-grow">Develop the initial interface and page structure for the project.</p>
+          <a href="#" class="text-white font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open <span class="text-apple-gold">→</span>
+          </a>
+        </div>
+
+        <!-- Project Task 2 -->
+        <div class="relative flex flex-col bg-zinc-800 rounded-3xl p-8 border border-zinc-700 hover:border-zinc-500 transition-colors group">
+          <span class="bg-apple-gold text-white text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Project Task 2</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">PHP + Database + MVC</h3>
+          <p class="text-zinc-400 font-light mb-8 flex-grow">Implement server-side functionality and database operations.</p>
+          <a href="#" class="text-white font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open <span class="text-apple-gold">→</span>
+          </a>
+        </div>
+
+        <!-- Project Task 3 -->
+        <div class="relative flex flex-col bg-zinc-800 rounded-3xl p-8 border border-zinc-700 hover:border-zinc-500 transition-colors group">
+          <span class="bg-apple-gold text-white text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Project Task 3</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">JavaScript + AJAX</h3>
+          <p class="text-zinc-400 font-light mb-8 flex-grow">Improve usability and responsiveness with JavaScript and AJAX.</p>
+          <a href="#" class="text-white font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open <span class="text-apple-gold">→</span>
+          </a>
+        </div>
+
+        <!-- Final -->
+        <div class="relative flex flex-col bg-zinc-800 rounded-3xl p-8 border border-zinc-700 hover:border-zinc-500 transition-colors group">
+          <span class="bg-apple-gold text-white text-xs font-semibold px-3 py-1 rounded-full self-start mb-6">Final</span>
+          <h3 class="text-xl font-bold tracking-tight mb-2">Final Enhancement</h3>
+          <p class="text-zinc-400 font-light mb-8 flex-grow">Complete the system and add meaningful enhancements to the project.</p>
+          <a href="#" class="text-white font-medium self-start flex items-center gap-1 before:absolute before:inset-0">
+            Open <span class="text-apple-gold">→</span>
+          </a>
+        </div>
+
+      </div>
     </div>
-  </div>
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center py-12 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-white font-medium mb-1">TTTM2113 Web Development</p>
+      <p class="text-zinc-600 text-sm font-light">Copyright © 2026 Your Website</p>
+    </div>
+  </footer>
+
 </body>
-</html> 
+</html>
