@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Searching Form</title>
+
+  <style>
+        #header {
+        background-color: navy;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Noto Sans Mono', monospace;
+        }
+        #title {
+        color: white;
+        margin: 0;
+        font-family: 'Noto Sans Mono', monospace;
+        }
+        #content {
+        padding: 20px;
+        min-height: 550px;
+        font-family: 'Noto Sans Mono', monospace;
+        max-width: 400px; 
+        margin: 0 auto;
+        font-size: 20px;
+        }
+  </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Searching Form</h1>
+    </div>
+
+    <hr>
+    <div id="content">
+        <form action="http://lrgs.ftsm.ukm.my/users/a123456/lab-2/process_search.php" method="post">
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>Keyword:</td>
+                    <td><input type="search" name="keyword" placeholder="Insert your keyword" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+                    <td><input type="submit" name="search_form" value="Find" style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;" ></td>
+                </tr>
+            </table>
+        <hr>
+            <input type="hidden" name="matricnum" value="a228896">
+        </form>
+    </div>
+</body>
+</html>

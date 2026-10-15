@@ -1,0 +1,106 @@
+<!--
+Matric Number: A228896
+Name: Ali Umar bin Hisham Talib
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Biodata</title>
+
+  <style>
+    #header {
+      background-color: navy;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Noto Sans Mono', monospace;
+    }
+    #title {
+      color: white;
+      margin: 0;
+      font-family: 'Noto Sans Mono', monospace;
+    }
+    #content {
+      padding: 20px;
+      min-height: 550px;
+      font-family: 'Noto Sans Mono', monospace;
+      max-width: 1100px; 
+      margin: 0 auto;
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+<body>
+<div id="header">
+  <h1 id="title">Biodata</h1>
+</div>
+<hr>
+<div id="content">
+    <form action="http://lrgs.ftsm.ukm.my/users/a123456/lab-2/validate_biodata.php" method="post" enctype="multipart/form-data">
+    <table border="1" cellpadding="10" style="width: 100%">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" pattern="^[A-Z][a-z]*(\s[A-Z][a-z]*)*$" autofocus required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="number" name="age" min="0" max="100" step="1" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+            </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><label><input type="radio" name="gender" required value="male" checked>Male</label>  <label><input type="radio" name="gender" value="female" style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;">Female</label></td>
+            </tr>
+            <tr>
+            <td>Address:</td>
+            <td><textarea name="address" cols="50" rows="5" placeholder="Insert your address" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></textarea></td>
+            </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" pattern=".*ukm.*" title="Email must contain the word 'ukm' (e.g., a123456@siswa.ukm.edu.my)" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name="dob" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+        </tr>
+        <tr>
+            <td>Height:</td>
+            <td><input type="range" name="height" id="heightId" required min = "100" max = "200" value = "150" oninput="outputId.value = heightId.value"> <output id="outputId">150</output>cm</td>
+        </tr>
+        <tr>
+            <td>Tel:</td>
+            <td><input type="tel" name="phone" pattern="^(\+60|0060)[0-9\-]+$" title="Phone number must start with +60 or 0060" placeholder="+60##-#######" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+        </tr>
+        <tr>
+            <td>My Favourite Color:</td>
+            <td><input type="color" name="color" value="#008000" required style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td>FB/TW/IG:</td>
+            <td><input type="url" name="fbtwig" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+        </tr>
+        <tr>
+            <td>My Face Photo:</td>
+            <td><input type="file" name="photo" accept="image/*" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+        </tr>
+        <tr>
+            <td>My University:</td>
+            <td>
+                <select name="university" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;">
+                    <option value="UKM" selected>Universiti Kebangsaan Malaysia</option>
+                    <option value="UM">Universiti Malaya</option>
+                    <option value="UTM">Universiti Teknologi Malaysia</option>
+                    <option value="USM">Universiti Sains Malaysia</option>
+                    <option value="UPM">Universiti Putra Malaysia</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" name="matricnum" value="a228896">
+    <hr>
+    <button type="submit" name="biodata_form" style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;">Submit My Biodata</button>
+    <input type="reset" value="Reset" style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;">
+    </form>
+</div>
+</body>
+</html>

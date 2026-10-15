@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+
+    <style>
+    #header {
+      background-color: navy;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Noto Sans Mono', monospace;
+    }
+    #title {
+      color: white;
+      margin: 0;
+      font-family: 'Noto Sans Mono', monospace;
+    }
+    #content {
+      padding: 20px;
+      min-height: 550px;
+      font-family: 'Noto Sans Mono', monospace;
+      max-width: 400px; 
+      margin: 0 auto;
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Login Form</h1>
+    </div>
+<hr>
+    <div id="content" style="text-align: center;">
+        <form action="http://lrgs.ftsm.ukm.my/users/a123456/lab-2/process_login.php" method="post">
+            <table border="1" cellpadding="10" width="100%">
+                <tr>
+                    <td>Username:</td>
+                    <td><input name="username" type="text" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input name="password" type="password" required style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;"></td>
+                </tr>
+            </table>
+            <hr>
+            <input type="hidden" name="matricnum" value="a228896">
+            <input type="submit" value="Login" name="login_form" style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;">
+            <input type="reset" value="Reset" style="font-family: 'Noto Sans Mono', monospace; font-size: 20px;">
+        </form>
+    </div>
+</body>
+</html>
